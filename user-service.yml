@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: '{cipher}AQB7CU2hQo8lIvo/pCfidMRdWnn7S0QtjhH0eB+LKJ+F2mUCtm53PEKSPF9NprtP97QytC8dmJYgd3QmzzqjkEbEIDavWJ+9nyrOj+08zlOpDW89no+6DGiVQRylfyxgYdB0og3tWCMWZkaXP9N4DagDi5JanDLeBATyi6Zlg2oAsX9NecDBj19dfCLdAcl5jbt0sGbulROBH/4eg08Bnw3lOe6tdFv3/lyryb2hFaYCVT+AITpxlDA4sBx5kVFVgDAdLn331PC1LS4grvBM/wYwyEY3ux/reTSbPr6a3wfx3tmnd4h79ot8GkUbyKFxl/edpHBNfYivxqWUDEFuoBw5TwwQsf2VFm+EnTcgGn9iHeO5v4ygXG46e+8w0HXBM4s='
+
+order_serivce:
+  url: http://ORDER-SERVICE/order-service/%s/order
+
+
+token:
+  expiration_time: 864000000
+  secret: user_token_file
